@@ -23,5 +23,15 @@ public class Quicksort {
         return pivot + 1;
     }
 
-    public void sort(int[] array) {}
+    private void sort(int[] array, int first, int last) {
+        if(first < last) {
+            int pivot = partition(array, first, last);
+            sort(array, first, pivot - 1);
+            sort(array, pivot + 1, last);
+        }
+    }
+
+    public void sort(int[] array) {
+        sort(array, 0, array.length - 1);
+    }
 }
