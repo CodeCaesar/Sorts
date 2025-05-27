@@ -20,3 +20,6 @@ def __quicksort(array, first, last):
         pivot = partition(array, first, last)
         __quicksort(array, first, pivot - 1)
         __quicksort(array, pivot + 1, last)
+
+def quicksort(array):
+    __quicksort(array, 0, len(array) - 1)
