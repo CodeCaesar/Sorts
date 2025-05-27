@@ -3,8 +3,8 @@ def partition(array, first, last):
     pivot = first - 1
 
     for index in range(first, last):
-        if array[index] < last_element:
-            pivot =+ 1
+        if array[index] <= last_element:
+            pivot += 1
             swapper = array[pivot]
             array[pivot] = array[index]
             array[index] = swapper
