@@ -10,15 +10,11 @@ public class Quicksort {
             if(array[index] <= lastElement) {
                 pivot += 1;
 
-                int swapper = array[pivot];
-                array[pivot] = array[index];
-                array[index] = swapper;
+                HelperFunctions.swap(array, pivot, index);
             }
         }
 
-        int swapper = array[pivot + 1];
-        array[pivot + 1] = array[last];
-        array[last] = swapper;
+        HelperFunctions.swap(array, pivot + 1, last);
 
         return pivot + 1;
     }
