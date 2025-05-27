@@ -14,3 +14,9 @@ def partition(array, first, last):
     array[last] = swapper
 
     return pivot + 1
+
+def __quicksort(array, first, last):
+    if first < last:
+        pivot = partition(array, first, last)
+        __quicksort(array, first, pivot - 1)
+        __quicksort(array, pivot + 1, last)
