@@ -1,3 +1,6 @@
+from helper_functions import swap
+
+
 def partition(array, first, last):
     last_element = array[last]
     pivot = first - 1
@@ -5,13 +8,10 @@ def partition(array, first, last):
     for index in range(first, last):
         if array[index] <= last_element:
             pivot += 1
-            swapper = array[pivot]
-            array[pivot] = array[index]
-            array[index] = swapper
+
+            swap(array, pivot, index)
     
-    swapper = array[pivot + 1]
-    array[pivot + 1] = array[last]
-    array[last] = swapper
+    swap(array, pivot + 1, last)
 
     return pivot + 1
 
