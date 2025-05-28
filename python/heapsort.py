@@ -22,3 +22,9 @@ def max_heapify(array, index, size):
     if largest != index:
         swap(index, largest)
         max_heapify(array, largest, size)
+
+def build_max_heap(array, size):
+    starting_index = (size // 2) - 1
+
+    for index in range(starting_index, -1, -1):
+        max_heapify(array, index, size)
