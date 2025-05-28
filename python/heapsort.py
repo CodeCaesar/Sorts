@@ -34,7 +34,7 @@ def __heapsort(array, size):
     heap_size = size
 
     for index in range(size - 1, 0, -1):
-        swap(array, 0, 1)
+        swap(array, 0, index)
         heap_size -= 1
         max_heapify(array, 0, heap_size)
 

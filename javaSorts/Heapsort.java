@@ -16,7 +16,9 @@ public class Heapsort {
 
         if(leftIndex < size && array[leftIndex] > array[largest]) {
             largest = leftIndex;
-        } else if(rightIndex < size && array[rightIndex] > array[largest]) {
+        }
+        
+        if(rightIndex < size && array[rightIndex] > array[largest]) {
             largest = rightIndex;
         }
 
@@ -34,7 +36,18 @@ public class Heapsort {
         }
     }
 
-    private static void sort(int[] array, int size) {}
+    private static void sort(int[] array, int size) {
+        buildMaxHeap(array, size);
+        int heap_size = size;
 
-    public static void sort(int[] array) {}
+        for(int index = size - 1; index > 0; index--) {
+            HelperFunctions.swap(array, 0, index);
+            heap_size -= 1;
+            maxHeapify(array, 0, heap_size);
+        }
+    }
+
+    public static void sort(int[] array) {
+        sort(array, array.length);
+    }
 }
