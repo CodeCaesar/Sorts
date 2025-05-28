@@ -40,3 +40,17 @@ def get_array(array):
                 arrayElements += f"{array[index]}"
 
         return arrayElements
+
+def max_element(array):
+    """
+    FucFunction max_element() finds max element of an array and return incremented max.
+
+    Running time: O(1) + O(n) + O(n) + O(n) + O(1) = O(3n + 2) = O(n)
+    """
+    max = array[0]
+
+    for index in range(1, len(array)):
+        if array[index] > max:
+            max = array[index]
+    
+    return max + 1

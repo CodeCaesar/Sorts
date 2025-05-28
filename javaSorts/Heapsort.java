@@ -1,7 +1,7 @@
 package javaSorts;
 
 public class Heapsort {
-    
+
     private static int left(int index) {
         return (2 * index) + 1;
     }
@@ -30,21 +30,21 @@ public class Heapsort {
     }
 
     private static void buildMaxHeap(int[] array, int size) {
-        int starting_index = (size / 2) - 1;
+        int startingIndex = (size / 2) - 1;
 
-        for (int index = starting_index; index > -1; index--) {
+        for (int index = startingIndex; index > -1; index--) {
             maxHeapify(array, index, size);
         }
     }
 
     private static void sort(int[] array, int size) {
         buildMaxHeap(array, size);
-        int heap_size = size;
+        int heapSize = size;
 
         for(int index = size - 1; index > 0; index--) {
             HelperFunctions.swap(array, 0, index);
-            heap_size -= 1;
-            maxHeapify(array, 0, heap_size);
+            heapSize -= 1;
+            maxHeapify(array, 0, heapSize);
         }
     }
 
