@@ -26,7 +26,13 @@ public class Heapsort {
         }
     }
 
-    private static void buildMaxHeap(int[] array, int size) {}
+    private static void buildMaxHeap(int[] array, int size) {
+        int starting_index = (size / 2) - 1;
+
+        for (int index = starting_index; index > -1; index--) {
+            maxHeapify(array, index, size);
+        }
+    }
 
     private static void sort(int[] array, int size) {}
 
