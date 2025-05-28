@@ -6,4 +6,14 @@ public class HelperFunctions {
         array[index_a] = array[index_b];
         array[index_b] = swapper;
     }
+
+    public static boolean isSorted(int[] array) {
+        for(int index = 0; index < array.length - 1; index++) {
+            if(array[index] > array[index + 1]) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
 }
