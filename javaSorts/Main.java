@@ -7,7 +7,8 @@ public class Main {
         //Quicksort.sort(arr);
         //Heapsort.sort(arr);
         //InsertionSort.sort(arr);
-        SelectionSort.sort(arr);
+        //SelectionSort.sort(arr);
+        BubbleSort.sort(arr);
 
         System.out.println(HelperFunctions.getArray(arr));
     }

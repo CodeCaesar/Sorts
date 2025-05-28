@@ -14,8 +14,3 @@ def selection_sort(array):
 
         if min_element != index:
             swap(array, index, min_element)
-
-arr = [5,8,3,1,9,2,5]
-selection_sort(arr)
-
-print(arr)
