@@ -27,4 +27,18 @@ public class Mergesort {
             }
         }
     }
+
+    private static void sort(int[] array, int first, int last) {
+        if(first < last) {
+            int pivot = (first + last) / 2;
+
+            sort(array, first, pivot);
+            sort(array, pivot + 1, last);
+            merge(array, first, pivot, last);
+        }
+    }
+
+    public static void sort(int[] array) {
+        sort(array, 0, array.length - 1);
+    }
 }
