@@ -2,6 +2,7 @@ package javaSorts;
 
 public class BubbleSort {
     public static void sort(int[] array) {
+        
         for(int position = 0; position < array.length; position++) {
             boolean swapped = false;
 

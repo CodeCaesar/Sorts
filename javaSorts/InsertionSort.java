@@ -1,6 +1,7 @@
 package javaSorts;
 
 public class InsertionSort {
+    
     public static void sort(int[] array) {
         for(int key_index = 1; key_index < array.length; key_index++) {
             int key = array[key_index];

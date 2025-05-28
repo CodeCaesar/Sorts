@@ -1,6 +1,7 @@
 package javaSorts;
 
 public class Heapsort {
+    
     private static int left(int index) {
         return (2 * index) + 1;
     }

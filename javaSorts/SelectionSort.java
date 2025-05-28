@@ -1,6 +1,7 @@
 package javaSorts;
 
 public class SelectionSort {
+    
     public static int getMinElement(int[] array, int current_min) {
         for(int index = current_min + 1; index < array.length; index++) {
             if(array[index] < array[current_min]) {
