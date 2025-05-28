@@ -20,3 +20,15 @@ def is_sorted(array):
             return False
     
     return True
+
+def get_array(array):
+        arrayElements = ""
+        followupIndex = len(array) - 1
+
+        for index in range(0, len(array)):
+            if index < followupIndex:
+                arrayElements += f"{array[index]}, "
+            else:
+                arrayElements += f"{array[index]}"
+
+        return arrayElements

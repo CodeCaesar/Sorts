@@ -13,7 +13,22 @@ public class HelperFunctions {
                 return false;
             }
         }
-        
+
         return true;
+    }
+
+    public static String getArray(int[] array) {
+        String arrayElements = "";
+        int followupIndex = array.length - 1;
+
+        for(int index = 0; index < array.length; index++) {
+            if(index < followupIndex) {
+                arrayElements += array[index] + ", ";
+            } else {
+                arrayElements += array[index];
+            }
+        }
+
+        return arrayElements;
     }
 }

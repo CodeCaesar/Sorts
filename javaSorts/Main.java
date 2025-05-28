@@ -7,8 +7,6 @@ public class Main {
         //Quicksort.sort(arr);
         Heapsort.sort(arr);
 
-        for(int index = 0; index < arr.length; index++) {
-            System.out.println(arr[index]);
-        }
+        System.out.println(HelperFunctions.getArray(arr));
     }
 }
