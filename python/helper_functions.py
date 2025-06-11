@@ -1,4 +1,4 @@
-def swap(array, index_a, index_b):
+def swap(array:list, index_a:int, index_b:int):
     """
     Function swap() swaps elements of index a and b of an array.
 
@@ -8,7 +8,7 @@ def swap(array, index_a, index_b):
     array[index_a] = array[index_b]
     array[index_b] = swapper
 
-def is_sorted(array):
+def is_sorted(array:list):
     """
     Function is_sorted() checks if array is sorted by comparing corrent element to the next; if current element is larger than next, 
     it returns false, if it goes throught entire array and every element is either smaller or equal to the next element that return true.
@@ -21,7 +21,7 @@ def is_sorted(array):
     
     return True
 
-def get_array(array):
+def get_array(array:list):
         """
         Function get_array() runs through every element of an array and adds it to string arrayElements, and returns all elements.
         Also depending if loop is at last index it either has additional comma at the end of an element or doesn't.
@@ -41,7 +41,7 @@ def get_array(array):
 
         return arrayElements
 
-def max_element(array):
+def max_element(array:list):
     """
     FucFunction max_element() finds max element of an array and return incremented max.
 
