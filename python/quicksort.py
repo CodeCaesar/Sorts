@@ -1,7 +1,7 @@
 from helper_functions import swap
 
 
-def partition(array, first, last):
+def partition(array:list, first:int, last:int):
     last_element = array[last]
     pivot = first - 1
 
@@ -15,11 +15,11 @@ def partition(array, first, last):
 
     return pivot + 1
 
-def __quicksort(array, first, last):
+def __quicksort(array:list, first:int, last:int):
     if first < last:
         pivot = partition(array, first, last)
         __quicksort(array, first, pivot - 1)
         __quicksort(array, pivot + 1, last)
 
-def quicksort(array):
+def quicksort(array:list):
     __quicksort(array, 0, len(array) - 1)

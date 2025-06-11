@@ -1,13 +1,13 @@
 from helper_functions import swap
 
 
-def left(index):
+def left(index:int):
     return (2 * index) + 1
 
-def right(index):
+def right(index:int):
     return (2 * index) + 2
 
-def max_heapify(array, index, size):
+def max_heapify(array:list, index:int, size:int):
     left_index = left(index)
     right_index = right(index)
 
@@ -23,13 +23,13 @@ def max_heapify(array, index, size):
         swap(array, index, largest)
         max_heapify(array, largest, size)
 
-def build_max_heap(array, size):
+def build_max_heap(array:list, size:int):
     starting_index = (size // 2) - 1
 
     for index in range(starting_index, -1, -1):
         max_heapify(array, index, size)
 
-def __heapsort(array, size):
+def __heapsort(array:list, size:int):
     build_max_heap(array, size)
     heap_size = size
 
@@ -38,5 +38,5 @@ def __heapsort(array, size):
         heap_size -= 1
         max_heapify(array, 0, heap_size)
 
-def heapsort(array):
+def heapsort(array:list):
     __heapsort(array, len(array))
