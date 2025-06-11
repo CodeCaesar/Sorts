@@ -16,7 +16,7 @@ def bogosort(array:list):
     Worst Case:\t<b>Infinite</b> \n
 
     <h3>Space Complexity & Stability</h3>
-    Space complexity is: <b>O(1)</b>
+    Space complexity is: <b>O(1)</b> \n
     Bogosort is <b>not stable</b>
     """
     while not is_sorted(array):
