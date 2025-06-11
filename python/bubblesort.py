@@ -1,7 +1,7 @@
 from helper_functions import swap
 
 
-def bubble_sort(array):
+def bubble_sort(array:list):
     for position in range(0, len(array)):
         swapped = False
         

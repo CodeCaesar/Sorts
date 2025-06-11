@@ -1,4 +1,4 @@
-def insertion_sort(array):
+def insertion_sort(array:list):
     for key_index in range(1, len(array)):
         key = array[key_index]
         index = key_index - 1
