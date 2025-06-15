@@ -43,7 +43,7 @@ def get_array(array:list):
 
 def max_element(array:list):
     """
-    FucFunction max_element() finds max element of an array and return incremented max.
+    Function max_element() finds max element of an array and return incremented max.
 
     Running time: O(1) + O(n) + O(n) + O(n) + O(1) = O(3n + 2) = O(n)
     """
