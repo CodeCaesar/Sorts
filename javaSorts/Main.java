@@ -11,8 +11,9 @@ public class Main {
         //SelectionSort.sort(arr);
         //BubbleSort.sort(arr);
         //Mergesort.sort(arr);
-        Bogosort.sort(arrShort);
+        //Bogosort.sort(arrShort);
+        CountingSort.sort(arr);
 
-        System.out.println(HelperFunctions.getArray(arrShort));
+        System.out.println(HelperFunctions.getArray(arr));
     }
 }

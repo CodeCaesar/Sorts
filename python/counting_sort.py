@@ -2,7 +2,6 @@ from helper_functions import max_element
 
 
 def counting_sort(array:list):
-    #CountingSort
     array_size = len(array)
     max_elm = max_element(array)
 
