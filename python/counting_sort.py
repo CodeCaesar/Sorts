@@ -6,8 +6,8 @@ def counting_sort(array:list):
     array_size = len(array)
     max_elm = max_element(array)
 
-    counting_table = [0 for x in range(0, max_elm)]
-    sorted_array = [0 for x in range(0, array_size)]
+    counting_table = [0 for _ in range(0, max_elm)]
+    sorted_array = [0 for _ in range(0, array_size)]
 
     for index in range(0, array_size):
         counting_table[array[index]] = counting_table[array[index]] + 1

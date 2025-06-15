@@ -5,8 +5,8 @@ def merge(array:list, first:int, pivot:int, last:int, max:int):
     leftSize = pivot - first + 1
     rightSize = last - pivot
 
-    left = [0 for x in range(0, leftSize + 1)]
-    right = [0 for x in range(0, rightSize + 1)]
+    left = [0 for _ in range(0, leftSize + 1)]
+    right = [0 for _ in range(0, rightSize + 1)]
 
     for leftIndex in range(0, leftSize):
         left[leftIndex] = array[first + leftIndex]
