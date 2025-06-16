@@ -2,10 +2,20 @@ package javaSorts;
 
 public class Heapsort {
 
+    /**
+     * Returns index multiplied by 2 and then incremented by 1
+     * <p>
+     * Running Time: O(1) = <b>O(1)</b>
+     */
     private static int left(int index) {
         return (2 * index) + 1;
     }
 
+    /**
+     * Returns index multiplied by 2 and then incremented by 2
+     * <p>
+     * Running Time: O(1) = <b>O(1)</b>
+     */
     private static int right(int index) {
         return (2 * index) + 2;
     }
