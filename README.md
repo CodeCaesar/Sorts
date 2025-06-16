@@ -5,23 +5,23 @@
 ### Java
 Java sorting algorithms are implemented to sort arrays, lists and array lists.
 Following sorts implemented:
-- Mergesort
-- Quick sort
+- Bogo sort
+- Bubble sort
+- Counting sort
 - Heap sort
 - Instert sort
-- Bubble sort
+- Mergesort
+- Quick sort
 - Selection sort
-- Bogo sort
-- Counting sort
 
 ### Python
 Python sorting algorithms are implemented to sort lists.
 Following sorts implemented:
-- Mergesort
-- Quick sort
+- Bogo sort
+- Bubble sort
+- Counting sort
 - Heap sort
 - Instert sort
-- Bubble sort
+- Mergesort
+- Quick sort
 - Selection sort
-- Bogo sort
-- Counting sort
