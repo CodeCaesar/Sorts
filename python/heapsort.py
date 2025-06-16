@@ -2,9 +2,19 @@ from helper_functions import swap
 
 
 def __left(index:int):
+    """
+    Returns index multiplied by 2 and then incremented by 1
+
+    Running Time: O(1) = <b>O(1)</b>
+    """
     return (2 * index) + 1
 
 def __right(index:int):
+    """
+    Returns index multiplied by 2 and then incremented by 2
+
+    Running Time: O(1) = <b>O(1)</b>
+    """
     return (2 * index) + 2
 
 def __max_heapify(array:list, index:int, size:int):

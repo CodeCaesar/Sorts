@@ -28,7 +28,7 @@ public class Quicksort {
     }
 
     /**
-     * Compares first and last parameters and if first is less than last it takes pivot by calling __partition function, then recursively calls 
+     * Compares first and last parameters and if first is less than last it takes pivot by calling partition method, then recursively calls 
      * it self 1st by taking first and pivot-1 and then by taking pivot+1 and last, and repeat it on each recursive call.
      * <p>
      * Running Time: <p>
