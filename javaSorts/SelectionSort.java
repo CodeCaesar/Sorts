@@ -2,7 +2,7 @@ package javaSorts;
 
 public class SelectionSort {
     
-    public static int getMinElement(int[] array, int currentMin) {
+    private static int getMinElement(int[] array, int currentMin) {
         for(int index = currentMin + 1; index < array.length; index++) {
             if(array[index] < array[currentMin]) {
                 currentMin = index;
