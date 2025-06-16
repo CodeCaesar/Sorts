@@ -2,6 +2,11 @@ from helper_functions import swap
 
 
 def __get_min_element(array:list, current_min:int):
+    """
+    Goes over entire array and compares current smallest element to current one and picks the smallest, after loop is finished it returns current min
+
+    Running Time: O(n) + O(n) + O(n) + O(1) = O(3n + 1) = <b>O(n)</b>
+    """
     for index in range(current_min + 1, len(array)):
         if array[index] < array[current_min]:
             current_min = index
