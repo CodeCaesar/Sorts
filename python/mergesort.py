@@ -2,6 +2,12 @@ from helper_functions import max_element
 
 
 def __merge(array:list, first:int, pivot:int, last:int, max:int):
+    """
+    
+    Running Time: O(1) + O(1) + O(n / 2) + O(n / 2) + O(n / 2 - 1) + O(n / 2 - 1) + O(n / 2 - 1) + O(n / 2 - 1) + 
+    O(1) + O(1) + O(1) + O(1) + O(n) + O(n) + O(n) + O(n) + O(n) + O(n) + O(n) = O(7n + 6n/2 - 4 + 4) = O(10n) = 
+    <b>O(n)</b>
+    """
     leftSize = pivot - first + 1
     rightSize = last - pivot
 
