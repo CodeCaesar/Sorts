@@ -34,6 +34,8 @@ public class Quicksort {
      * Quicksort is sorting array by taking last element as pivot and then comparing it each element if its smaller or greater 
      * than pivot and swaps them with pivot index, later it returs pivot index and sorts indexes between final pivot index (first, pivot-1 and pivot+1, last) 
      * and repeats it until its sorted.
+     * <p>
+     * It's also possible to take median or random(mostly used) element but it still risks O(n^2) run time.
      * 
      * <h3>Running Time</h3>
      * Best Case:\t<b>O(n log n)</b> \n
