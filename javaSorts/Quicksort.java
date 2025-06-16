@@ -3,20 +3,20 @@ package javaSorts;
 public class Quicksort {
 
     private static int partition(int[] array, int first, int last) {
-        int lastElement = array[last];
-        int pivot = first - 1;
+        int pivot = array[last];
+        int pivotIndex = first - 1;
 
         for(int index = first; index < last; index++) {
-            if(array[index] <= lastElement) {
-                pivot += 1;
+            if(array[index] <= pivot) {
+                pivotIndex += 1;
 
-                HelperFunctions.swap(array, pivot, index);
+                HelperFunctions.swap(array, pivotIndex, index);
             }
         }
 
-        HelperFunctions.swap(array, pivot + 1, last);
+        HelperFunctions.swap(array, pivotIndex + 1, last);
 
-        return pivot + 1;
+        return pivotIndex + 1;
     }
 
     private static void sort(int[] array, int first, int last) {
@@ -31,8 +31,8 @@ public class Quicksort {
      * <h1>Quicksort</h1>
      * 
      * <h3>Description</h3>
-     * Quicksort is sorting array by taking last element and then comparing it each element if its smaller or greater 
-     * than last element and swaps them with pivot, later it returs pivot and sorts indexes between pivot (first, pivot-1 and pivot+1, last) 
+     * Quicksort is sorting array by taking last element as pivot and then comparing it each element if its smaller or greater 
+     * than pivot and swaps them with pivot index, later it returs pivot index and sorts indexes between final pivot index (first, pivot-1 and pivot+1, last) 
      * and repeats it until its sorted.
      * 
      * <h3>Running Time</h3>

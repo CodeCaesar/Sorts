@@ -2,18 +2,18 @@ from helper_functions import swap
 
 
 def partition(array:list, first:int, last:int):
-    last_element = array[last]
-    pivot = first - 1
+    pivot = array[last]
+    pivot_index = first - 1
 
     for index in range(first, last):
-        if array[index] <= last_element:
-            pivot += 1
+        if array[index] <= pivot:
+            pivot_index += 1
 
-            swap(array, pivot, index)
+            swap(array, pivot_index, index)
     
-    swap(array, pivot + 1, last)
+    swap(array, pivot_index + 1, last)
 
-    return pivot + 1
+    return pivot_index + 1
 
 def __quicksort(array:list, first:int, last:int):
     if first < last:
@@ -26,8 +26,8 @@ def quicksort(array:list):
     <h1>Quicksort</h1>
 
     <h3>Description</h3>
-    Quicksort is sorting array by taking last element and then comparing it each element if its smaller or greater 
-    than last element and swaps them with pivot, later it returs pivot and sorts indexes between pivot (first, pivot-1 and pivot+1, last) 
+    Quicksort is sorting array by taking last element as pivot and then comparing it each element if its smaller or greater 
+    than pivot and swaps them with pivot index, later it returs pivot index and sorts indexes between final pivot index (first, pivot-1 and pivot+1, last) 
     and repeats it until its sorted.
 
     It's also possible to take median or random(mostly used) element but it still risks O(n^2) run time.
