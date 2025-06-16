@@ -38,12 +38,12 @@ def quicksort(array:list):
     than pivot and swaps them with pivot index, later it returs pivot index and sorts indexes between final pivot index (first, pivot-1 and pivot+1, last) 
     and repeats it until its sorted.
 
-    It's also possible to take median or random(mostly used) element but it still risks O(n^2) run time.
+    It's also possible to take median or random(mostly used) element but it still risks O(n<sup>2</sup>) run time.
 
     <h3>Running Time</h3>
     Best Case:\t<b>O(n log n)</b> \n
     Average Case:\t<b>O(n log n)</b> \n
-    Worst Case:\t<b>O(n^2)</b> \n
+    Worst Case:\t<b>O(n<sup>2</sup>)</b> \n
 
     Worst case is when array is sorted or inverted.
 
