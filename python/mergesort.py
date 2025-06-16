@@ -1,7 +1,7 @@
 from helper_functions import max_element
 
 
-def merge(array:list, first:int, pivot:int, last:int, max:int):
+def __merge(array:list, first:int, pivot:int, last:int, max:int):
     leftSize = pivot - first + 1
     rightSize = last - pivot
 
@@ -32,7 +32,7 @@ def __mergesort(array:list, first:int, last:int, max:int):
 
         __mergesort(array, first, pivot, max)
         __mergesort(array, pivot + 1, last, max)
-        merge(array, first, pivot, last, max)
+        __merge(array, first, pivot, last, max)
 
 def mergesort(array:list):
     max = max_element(array)
