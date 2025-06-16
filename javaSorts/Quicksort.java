@@ -56,14 +56,14 @@ public class Quicksort {
      * It's also possible to take median or random(mostly used) element but it still risks O(n^2) run time.
      * 
      * <h3>Running Time</h3>
-     * Best Case:\t<b>O(n log n)</b> \n
-     * Average Case:\t<b>O(n log n)</b> \n
-     * Worst Case:\t<b>O(n^2)</b> \n
+     * Best Case: <b>O(n log n)</b> <p>
+     * Average Case: <b>O(n log n)</b> <p>
+     * Worst Case: <b>O(n^2)</b> <p>
      * 
      * Worst case is when array is sorted or inverted.
      * 
      * <h3>Space Complexity & Stability</h3>
-     * Space complexity is: <b>O(log n)</b> \n
+     * Space complexity is: <b>O(log n)</b> <p>
      * Quicksort is <b>not stable</b>
      */
     public static void sort(int[] array) {
