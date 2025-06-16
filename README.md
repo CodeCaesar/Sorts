@@ -6,22 +6,150 @@
 Java sorting algorithms are implemented to sort arrays, lists and array lists.
 Following sorts implemented:
 - Bogo sort
+  - Time Complexity
+    - Best case: __O(n)__
+    - Average case: __O(n!)__
+    - Worst case: __Infinite__
+  - Space Complexity
+    - __O(1)__
+  - Is Stable?
+    - __No__
 - Bubble sort
+  - Time Complexity
+    - Best case: __O(n)__
+    - Average case: __O(n<sup>2</sup>)__
+    - Worst case: __O(n<sup>2</sup>)__
+  - Space Complexity
+    - __O(1)__
+  - Is Stable?
+    - __Yes__
 - Counting sort
+  - Time Complexity
+    - Best case: __O(n + k)__
+    - Average case: __O(n + k)__
+    - Worst case: __O(n + k)__
+  - Space Complexity
+    - __O(k)__
+  - Is Stable?
+    - __Yes__
 - Heap sort
+  - Time Complexity
+    - Best case: __O(n log n)__
+    - Average case: __O(n log n)__
+    - Worst case: __O(n log n)__
+  - Space Complexity
+    - __O(1)__
+  - Is Stable?
+    - __No__
 - Instert sort
+  - Time Complexity
+    - Best case: __O(n)__
+    - Average case: __O(n<sup>2</sup>)__
+    - Worst case: __O(n<sup>2</sup>)__
+  - Space Complexity
+    - __O(1)__
+  - Is Stable?
+    - __Yes__
 - Mergesort
+  - Time Complexity
+    - Best case: __O(n log n)__
+    - Average case: __O(n log n)__
+    - Worst case: __O(n log n)__
+  - Space Complexity
+    - __O(n)__
+  - Is Stable?
+    - __Yes__
 - Quick sort
+  - Time Complexity
+    - Best case: __O(n log n)__
+    - Average case: __O(n log n)__
+    - Worst case: __O(n<sup>2</sup>)__
+  - Space Complexity
+    - __O(n log n)__
+  - Is Stable?
+    - __No__
 - Selection sort
+  - Time Complexity
+    - Best case: __O(n<sup>2</sup>)__
+    - Average case: __O(n<sup>2</sup>)__
+    - Worst case: __O(n<sup>2</sup>)__
+  - Space Complexity
+    - __O(1)__
+  - Is Stable?
+    - __No__
 
 ### Python
 Python sorting algorithms are implemented to sort lists.
 Following sorts implemented:
 - Bogo sort
+  - Time Complexity
+    - Best case: __O(n)__
+    - Average case: __O(n!)__
+    - Worst case: __Infinite__
+  - Space Complexity
+    - __O(1)__
+  - Is Stable?
+    - __No__
 - Bubble sort
+  - Time Complexity
+    - Best case: __O(n)__
+    - Average case: __O(n<sup>2</sup>)__
+    - Worst case: __O(n<sup>2</sup>)__
+  - Space Complexity
+    - __O(1)__
+  - Is Stable?
+    - __Yes__
 - Counting sort
+  - Time Complexity
+    - Best case: __O(n + k)__
+    - Average case: __O(n + k)__
+    - Worst case: __O(n + k)__
+  - Space Complexity
+    - __O(k)__
+  - Is Stable?
+    - __Yes__
 - Heap sort
+  - Time Complexity
+    - Best case: __O(n log n)__
+    - Average case: __O(n log n)__
+    - Worst case: __O(n log n)__
+  - Space Complexity
+    - __O(1)__
+  - Is Stable?
+    - __No__
 - Instert sort
+  - Time Complexity
+    - Best case: __O(n)__
+    - Average case: __O(n<sup>2</sup>)__
+    - Worst case: __O(n<sup>2</sup>)__
+  - Space Complexity
+    - __O(1)__
+  - Is Stable?
+    - __Yes__
 - Mergesort
+  - Time Complexity
+    - Best case: __O(n log n)__
+    - Average case: __O(n log n)__
+    - Worst case: __O(n log n)__
+  - Space Complexity
+    - __O(n)__
+  - Is Stable?
+    - __Yes__
 - Quick sort
+  - Time Complexity
+    - Best case: __O(n log n)__
+    - Average case: __O(n log n)__
+    - Worst case: __O(n<sup>2</sup>)__
+  - Space Complexity
+    - __O(n log n)__
+  - Is Stable?
+    - __No__
 - Selection sort
+  - Time Complexity
+    - Best case: __O(n<sup>2</sup>)__
+    - Average case: __O(n<sup>2</sup>)__
+    - Worst case: __O(n<sup>2</sup>)__
+  - Space Complexity
+    - __O(1)__
+  - Is Stable?
+    - __No__
