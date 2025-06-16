@@ -12,6 +12,7 @@ Following sorts implemented:
 - Bubble sort
 - Selection sort
 - Bogo sort
+- Counting sort
 
 ### Python
 Python sorting algorithms are implemented to sort lists.
