@@ -24,6 +24,16 @@ def __partition(array:list, first:int, last:int):
     return pivot_index + 1
 
 def __quicksort(array:list, first:int, last:int):
+    """
+    Compares first and last parameters and if first is less than last it takes pivot by calling __partition function, then recursively calls 
+    it self 1st by taking first and pivot-1 and then by taking pivot+1 and last, and repeat it on each recursive call.
+
+    Running Time: <p>
+    Best case: O(1) + O(n) + O(n log n) + O(n log n) = O(2n log n + n + 1) = <b>O(n log n)</b> <p>
+    Worst case: O(1) + O(n) + O(1) + O(n<sup>2</sup>) = O(n<sup>2</sup> + n + 2) = <b>O(n<sup>2</sup>)</b>
+
+    Worst case in this example is when array is already sorted so first would be equal to last thus first recursive call would be O(1)
+    """
     if first < last:
         pivot = __partition(array, first, last)
         __quicksort(array, first, pivot - 1)
