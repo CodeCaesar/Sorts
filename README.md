@@ -65,7 +65,7 @@ Following sorts implemented:
     - Average case: __O(n log n)__
     - Worst case: __O(n<sup>2</sup>)__
   - Space Complexity
-    - __O(n log n)__
+    - __O(log n)__
   - Is Stable?
     - __No__
 - Selection sort
@@ -141,7 +141,7 @@ Following sorts implemented:
     - Average case: __O(n log n)__
     - Worst case: __O(n<sup>2</sup>)__
   - Space Complexity
-    - __O(n log n)__
+    - __O(log n)__
   - Is Stable?
     - __No__
 - Selection sort
