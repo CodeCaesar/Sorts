@@ -2,6 +2,14 @@ package javaSorts;
 
 public class Quicksort {
 
+    /**
+     * Takes last element as pivot (random element is mostly used but for simplicity it's last) and pivotIndex which will be 
+     * returned as final index of pivot. Then it goes into for loop, that compares if array element at index is larger that pivot, 
+     * if not then increment pivotIndex by 1 and swap it with current index else continue. After the loop finishes it swaps 
+     * pivotIndex+1 with last index and returns pivotIndex+1.
+     * <p>
+     * Running Time: O(1) + O(1) + O(n - 1) + O(n - 1) + O(n - 1) + O(n - 1) + O(1) + O(1) = O(4(n - 1) + 4) = O(4n - 4 + 4) = <b>O(n)</b>
+     */
     private static int partition(int[] array, int first, int last) {
         int pivot = array[last];
         int pivotIndex = first - 1;
