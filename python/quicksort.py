@@ -1,7 +1,7 @@
 from helper_functions import swap
 
 
-def partition(array:list, first:int, last:int):
+def __partition(array:list, first:int, last:int):
     """
     Takes last element as pivot (random element is mostly used but for simplicity it's last) and pivot_index which will be 
     returned as final index of pivot. Then it goes into for loop, that compares if array element at index is larger that pivot, 
@@ -25,7 +25,7 @@ def partition(array:list, first:int, last:int):
 
 def __quicksort(array:list, first:int, last:int):
     if first < last:
-        pivot = partition(array, first, last)
+        pivot = __partition(array, first, last)
         __quicksort(array, first, pivot - 1)
         __quicksort(array, pivot + 1, last)
 
