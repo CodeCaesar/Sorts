@@ -2,6 +2,14 @@ from helper_functions import swap
 
 
 def partition(array:list, first:int, last:int):
+    """
+    Takes last element as pivot (random element is mostly used but for simplicity it's last) and pivot_index which will be 
+    returned as final index of pivot. Then it goes into for loop, that compares if array element at index is larger that pivot, 
+    if not then increment pivot_index by 1 and swap it with current index else continue. After the loop finishes it swaps 
+    pivot_index+1 with last index and returns pivot_index+1.
+
+    Running Time: O(1) + O(1) + O(n - 1) + O(n - 1) + O(n - 1) + O(n - 1) + O(1) + O(1) = O(4(n - 1) + 4) = O(4n - 4 + 4) = <b>O(n)</b>
+    """
     pivot = array[last]
     pivot_index = first - 1
 
@@ -41,6 +49,6 @@ def quicksort(array:list):
 
     <h3>Space Complexity & Stability</h3>
     Space complexity is: <b>O(log n)</b> \n
-    Bogosort is <b>not stable</b>
+    Quicksort is <b>not stable</b>
     """
     __quicksort(array, 0, len(array) - 1)

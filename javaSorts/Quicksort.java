@@ -46,7 +46,7 @@ public class Quicksort {
      * 
      * <h3>Space Complexity & Stability</h3>
      * Space complexity is: <b>O(log n)</b> \n
-     * Bogosort is <b>not stable</b>
+     * Quicksort is <b>not stable</b>
      */
     public static void sort(int[] array) {
         sort(array, 0, array.length - 1);
