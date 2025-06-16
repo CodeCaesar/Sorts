@@ -32,7 +32,7 @@ def __quicksort(array:list, first:int, last:int):
     Best case: O(1) + O(n) + O(n log n) + O(n log n) = O(2n log n + n + 1) = <b>O(n log n)</b> <p>
     Worst case: O(1) + O(n) + O(1) + O(n<sup>2</sup>) = O(n<sup>2</sup> + n + 2) = <b>O(n<sup>2</sup>)</b>
 
-    Worst case in this example is when array is already sorted so first would be equal to last thus first recursive call would be O(1)
+    Worst case in this example is when array is already sorted so first would be equal to last thus first recursive call would be O(1).
     """
     if first < last:
         pivot = __partition(array, first, last)

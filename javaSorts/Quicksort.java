@@ -27,6 +27,16 @@ public class Quicksort {
         return pivotIndex + 1;
     }
 
+    /**
+     * Compares first and last parameters and if first is less than last it takes pivot by calling __partition function, then recursively calls 
+     * it self 1st by taking first and pivot-1 and then by taking pivot+1 and last, and repeat it on each recursive call.
+     * <p>
+     * Running Time: <p>
+     * Best case: O(1) + O(n) + O(n log n) + O(n log n) = O(2n log n + n + 1) = <b>O(n log n)</b> <p>
+     * Worst case: O(1) + O(n) + O(1) + O(n^2) = O(n^2 + n + 2) = <b>O(n^2)</b> <p>
+     * 
+     * Worst case in this example is when array is already sorted so first would be equal to last thus first recursive call would be O(1).
+     */
     private static void sort(int[] array, int first, int last) {
         if(first < last) {
             int pivot = partition(array, first, last);
