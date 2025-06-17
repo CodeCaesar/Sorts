@@ -29,8 +29,7 @@ def selection_sort(array:list):
 
     <h3>Space Complexity & Stability</h3>
     Space complexity is: <b>O(1)</b> \n
-    Quicksort is <b>not stable</b>
-    
+    Selection Sort is <b>not stable</b>
     """
     for index in range(0, len(array) - 1):
         min_element = __get_min_element(array, index)
