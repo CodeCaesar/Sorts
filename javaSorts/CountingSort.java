@@ -1,6 +1,12 @@
 package javaSorts;
 
 public class CountingSort {
+
+    /**
+     * Function maxElement() finds max element of an array and return incremented max.
+     * <p>
+     * Running time: O(1) + O(n) + O(n) + O(n) + O(1) = O(3n + 2) = <b>O(n)</b>
+     */
     private static int max_element(int[] array) {
         int maxElm = 0;
 
