@@ -70,4 +70,20 @@ def __heapsort(array:list, size:int):
         __max_heapify(array, 0, heap_size)
 
 def heapsort(array:list):
+    """
+    <h2>Heapsort</h2>
+
+    <h3>Description</h3>
+    Heapsort starts by bulding max heap, then looping through array and in every iteration it: 
+    swaps index with 1st index then decreasing heap size by 1 and max heapifing. After loop finishes then array is sorted.
+
+    <h3>Running Time</h3>
+    Best Case:\t<b>O(n log n)</b> \n
+    Average Case:\t<b>O(n log n)</b> \n
+    Worst Case:\t<b>O(n log n)</b> \n
+
+    <h3>Space Complexity & Stability</h3>
+    Space complexity is: <b>O(1)</b> \n
+    Heapsort is <b>not stable</b>
+    """
     __heapsort(array, len(array))
