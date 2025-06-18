@@ -2,6 +2,23 @@ from helper_functions import swap
 
 
 def bubble_sort(array:list):
+    """
+    <h2>Bubble Sort</h2>
+
+    <h3>Description</h3>
+    Bubble sort
+
+    <h3>Running Time</h3>
+    Running Time: O(n) + O(n) + O((n-1)<sup>2</sup>) + O((n-1)<sup>2</sup>) + O((n-1)<sup>2</sup>) + O((n-1)<sup>2</sup>) + O(n) + O(1) = 
+    O(4(n-1)<sup>2</sup> + 3n + 1) = O(4n<sup>2</sup> - 5n + 5) = <b>O(n<sup>2</sup>)</b> \n
+    Best Case:\t<b>O(n<sup>2</sup>)</b> \n
+    Average Case:\t<b>O(n<sup>2</sup>)</b> \n
+    Worst Case:\t<b>O(n<sup>2</sup>)</b> \n
+
+    <h3>Space Complexity & Stability</h3>
+    Space complexity is: <b>O(1)</b> \n
+    Bubble Sort is <b>stable</b>
+    """
     for position in range(0, len(array)):
         swapped = False
         
