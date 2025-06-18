@@ -24,8 +24,6 @@ public class Bogosort {
      * <h3>Description</h3>
      * Bogosort is sorting array by randomly shuffling it until it's sorted. This is also why bogosort isn't an actual
      * algorithm since it can run forever.
-     * <p>
-     * It's also possible to take median or random(mostly used) element but it still risks O(n^2) run time.
      * 
      * <h3>Running Time</h3>
      * Best Case:\tO(3n + 1) = <b>O(n)</b> \n
