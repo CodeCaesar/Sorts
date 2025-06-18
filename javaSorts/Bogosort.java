@@ -19,7 +19,7 @@ public class Bogosort {
     }
 
     /**
-     * <h1>Bogosort</h1>
+     * <h2>Bogosort</h2>
      * 
      * <h3>Description</h3>
      * Bogosort is sorting array by randomly shuffling it until it's sorted. This is also why bogosort isn't an actual

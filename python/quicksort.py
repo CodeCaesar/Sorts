@@ -41,7 +41,7 @@ def __quicksort(array:list, first:int, last:int):
 
 def quicksort(array:list):
     """
-    <h1>Quicksort</h1>
+    <h2>Quicksort</h2>
 
     <h3>Description</h3>
     Quicksort is sorting array by taking last element as pivot and then comparing it each element if its smaller or greater 
