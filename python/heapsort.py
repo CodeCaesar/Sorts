@@ -41,6 +41,13 @@ def __max_heapify(array:list, index:int, size:int):
         __max_heapify(array, largest, size)
 
 def __build_max_heap(array:list, size:int):
+    """
+    Build max heap builds max-heap from unordered array.
+
+    Running Time: O(1) + O(n / 2 - 1) + O(n log n / 2 - log n) = <b>O(n log n)</b> \n
+    However operations are distributed in efficient way over diffrent tree depths leading to overall time complexity of: \n
+    Running Time: <b>O(n)</b>
+    """
     starting_index = (size // 2) - 1
 
     for index in range(starting_index, -1, -1):
