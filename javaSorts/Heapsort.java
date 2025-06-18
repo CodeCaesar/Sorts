@@ -62,8 +62,8 @@ public class Heapsort {
     }
 
     /**
-     * Heapsort starts with building max heap then makes variable heap_size to be size of the heap. Then loop starts from size 
-     * decremented by 1 down to 2nd index, each time loop runs; 1st index is being swapped with loop index and heap_size is 
+     * Heapsort starts with building max heap then makes variable heapSize to be size of the heap. Then loop starts from size 
+     * decremented by 1 down to 2nd index, each time loop runs; 1st index is being swapped with loop index and heapSize is 
      * decremented by 1, and max heapify is being called. After loop finishes array is sorted.
      * <p>
      * Running Time: O(n) + O(1) + O(n - 2) + O(n - 2) + O(n - 2) + O(n log n - 2 log n) = O(n log n + 4n - 2 log n - 5) = <b>O(n log n)</b>
@@ -79,6 +79,22 @@ public class Heapsort {
         }
     }
 
+    /**
+     * <h2>Heapsort</h2>
+     * <p>
+     * <h3>Description</h3>
+     * Heapsort starts by bulding max heap, then looping through array and in every iteration it: 
+     * swaps index with 1st index then decreasing heap size by 1 and max heapifing. After loop finishes then array is sorted.
+     * <p>
+     * <h3>Running Time</h3>
+     * Best Case:\t<b>O(n log n)</b> \n
+     * Average Case:\t<b>O(n log n)</b> \n
+     * Worst Case:\t<b>O(n log n)</b> \n
+     * <p>
+     * <h3>Space Complexity & Stability</h3>
+     * Space complexity is: <b>O(1)</b> \n
+     * Heapsort is <b>not stable</b>
+     */
     public static void sort(int[] array) {
         sort(array, array.length);
     }
