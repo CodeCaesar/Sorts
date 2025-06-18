@@ -6,7 +6,9 @@ def bubble_sort(array:list):
     <h2>Bubble Sort</h2>
 
     <h3>Description</h3>
-    Bubble sort
+    Bubble sort loops through entire array, first it creates variable swapped which is set to false, then it loops from index 1 to last index 
+    decremented by current position in first loop and 1, then if current index has smaller element than previous element than swap them and 
+    swapped variable is set to true. If swapped is false than break loop and array is sorted.
 
     <h3>Running Time</h3>
     Running Time: O(n) + O(n) + O((n-1)<sup>2</sup>) + O((n-1)<sup>2</sup>) + O((n-1)<sup>2</sup>) + O((n-1)<sup>2</sup>) + O(n) + O(1) = 
