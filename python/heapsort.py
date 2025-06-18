@@ -18,6 +18,13 @@ def __right(index:int):
     return (2 * index) + 2
 
 def __max_heapify(array:list, index:int, size:int):
+    """
+    Max heapify is used to maintain max-heap property.
+
+    Running Time: O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(log n) = O(log n + 10) = <b>O(log n)</b>
+
+    log being base 2: log<sub>2</sub>
+    """
     left_index = __left(index)
     right_index = __right(index)
 
