@@ -20,6 +20,13 @@ public class Heapsort {
         return (2 * index) + 2;
     }
 
+    /**
+     * Max heapify is used to maintain max-heap property.
+     * <p>
+     * Running Time: O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(1) + O(log n) = O(log n + 10) = <b>O(log n)</b>
+     * <p>
+     * log being base 2: log_{2}
+     */
     private static void maxHeapify(int[] array, int index, int size) {
         int leftIndex = left(index);
         int rightIndex = right(index);
