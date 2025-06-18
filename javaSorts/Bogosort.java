@@ -26,9 +26,9 @@ public class Bogosort {
      * algorithm since it can run forever.
      * 
      * <h3>Running Time</h3>
-     * Best Case:\tO(3n + 1) = <b>O(n)</b> \n
-     * Average Case:\t<b>O(n!)</b> \n
-     * Worst Case:\t<b>Infinite</b> \n
+     * Best Case: O(3n + 1) = <b>O(n)</b> \n
+     * Average Case: <b>O(n!)</b> \n
+     * Worst Case: <b>Infinite</b> \n
      * 
      * <h3>Space Complexity & Stability</h3>
      * Space complexity is: <b>O(1)</b> \n
