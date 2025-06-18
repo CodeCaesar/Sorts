@@ -46,6 +46,13 @@ public class Heapsort {
         }
     }
 
+    /**
+     * Build max heap builds max-heap from unordered array.
+     * <p>
+     * Running Time: O(1) + O(n / 2 - 1) + O(n log n / 2 - log n) = <b>O(n log n)</b> <p>
+     * However operations are distributed in efficient way over diffrent tree depths leading to overall time complexity of: <p>
+     * Running Time: <b>O(n)</b>
+     */
     private static void buildMaxHeap(int[] array, int size) {
         int startingIndex = (size / 2) - 1;
 
