@@ -61,6 +61,13 @@ public class Heapsort {
         }
     }
 
+    /**
+     * Heapsort starts with building max heap then makes variable heap_size to be size of the heap. Then loop starts from size 
+     * decremented by 1 down to 2nd index, each time loop runs; 1st index is being swapped with loop index and heap_size is 
+     * decremented by 1, and max heapify is being called. After loop finishes array is sorted.
+     * <p>
+     * Running Time: O(n) + O(1) + O(n - 2) + O(n - 2) + O(n - 2) + O(n log n - 2 log n) = O(n log n + 4n - 2 log n - 5) = <b>O(n log n)</b>
+     */
     private static void sort(int[] array, int size) {
         buildMaxHeap(array, size);
         int heapSize = size;
