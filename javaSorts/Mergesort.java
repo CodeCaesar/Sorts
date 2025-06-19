@@ -3,7 +3,7 @@ package javaSorts;
 public class Mergesort {
     
     /**
-     * Merge first gets sizes left_size and right_size then copies two halves into left and right array, next sets last element as max which is 
+     * Merge first gets sizes leftSize and rightSize then copies two halves into left and right array, next sets last element as max which is 
      * largest element in array incremented by 1. Then for loop starts from first to last index of array and sorts in ascending order by 
      * comparing elements of left array to the right array.
      * <p>
@@ -37,6 +37,13 @@ public class Mergesort {
         }
     }
 
+    /**
+     * Merge sort first checks if first index is smaller than last, if true then get pivot by adding first and last indexes together 
+     * and dividing them by 2, then recursively calling itself twice (first by taking first and pivot, then by pivot+1 and last) then 
+     * calling merge.
+     * <p>
+     * Running Time: O(1) + O(1) + O(n log n) + O(n log n) + O(n) = O(2n log n + n + 2) = <b>O(n log n)</b>
+     */
     private static void sort(int[] array, int first, int last) {
         if(first < last) {
             int pivot = (first + last) / 2;
@@ -47,6 +54,22 @@ public class Mergesort {
         }
     }
 
+    /**
+     * <h2>Merge Sort</h2>
+     * 
+     * <h3>Description</h3>
+     * Merge Sort divides array into 2 sub-arrays each being half as large, then sorting them recursively, lastly merging sorted sub-arrays 
+     * which results in sorted array.
+     * 
+     * <h3>Running Time</h3>
+     * Best Case: <b>O(n log n)</b> <p>
+     * Average Case: <b>O(n log n)</b> <p>
+     * Worst Case: <b>O(n log n)</b> <p>
+     * 
+     * <h3>Space Complexity & Stability</h3>
+     * Space complexity is: <b>O(n)</b> <p>
+     * Merge Sort is <b>stable</b>
+     */
     public static void sort(int[] array) {
         sort(array, 0, array.length - 1);
     }
