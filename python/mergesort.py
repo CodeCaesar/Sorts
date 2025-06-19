@@ -3,9 +3,12 @@ from helper_functions import max_element
 
 def __merge(array:list, first:int, pivot:int, last:int, max:int):
     """
-    
+    Merge first gets sizes left_size and right_size then copies two halves into left and right array, next sets last element as max which is 
+    largest element in array incremented by 1. Then for llop starts from first to last index of array and sorts in ascending order by 
+    comparing elements of left array to the right array.
+
     Running Time: O(1) + O(1) + O(n / 2) + O(n / 2) + O(n / 2 - 1) + O(n / 2 - 1) + O(n / 2 - 1) + O(n / 2 - 1) + 
-    O(1) + O(1) + O(1) + O(1) + O(n) + O(n) + O(n) + O(n) + O(n) + O(n) + O(n) = O(7n + 6n/2 - 4 + 4) = O(10n) = 
+    O(1) + O(1) + O(1) + O(1) + O(n) + O(n) + O(n) + O(n) + O(n) + O(n) + O(n) = O(7n + 6n/2 - 4 + 6) = O(10n + 2) = 
     <b>O(n)</b>
     """
     left_size = pivot - first + 1
