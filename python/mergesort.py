@@ -8,29 +8,29 @@ def __merge(array:list, first:int, pivot:int, last:int, max:int):
     O(1) + O(1) + O(1) + O(1) + O(n) + O(n) + O(n) + O(n) + O(n) + O(n) + O(n) = O(7n + 6n/2 - 4 + 4) = O(10n) = 
     <b>O(n)</b>
     """
-    leftSize = pivot - first + 1
-    rightSize = last - pivot
+    left_size = pivot - first + 1
+    right_size = last - pivot
 
-    left = [0 for _ in range(0, leftSize + 1)]
-    right = [0 for _ in range(0, rightSize + 1)]
+    left = [0 for _ in range(0, left_size + 1)]
+    right = [0 for _ in range(0, right_size + 1)]
 
-    for leftIndex in range(0, leftSize):
-        left[leftIndex] = array[first + leftIndex]
-    for rightIndex in range(0, rightSize):
-        right[rightIndex] = array[pivot + 1 + rightIndex]
+    for left_index in range(0, left_size):
+        left[left_index] = array[first + left_index]
+    for right_index in range(0, right_size):
+        right[right_index] = array[pivot + 1 + right_index]
 
-    left[leftSize] = max
-    right[rightSize] = max
-    leftIndex = 0
-    rightIndex = 0
+    left[left_size] = max
+    right[right_size] = max
+    left_index = 0
+    right_index = 0
 
     for index in range(first, last + 1):
-        if left[leftIndex] <= right[rightIndex]:
-            array[index] = left[leftIndex]
-            leftIndex += 1
+        if left[left_index] <= right[right_index]:
+            array[index] = left[left_index]
+            left_index += 1
         else:
-            array[index] = right[rightIndex]
-            rightIndex += 1
+            array[index] = right[right_index]
+            right_index += 1
 
 def __mergesort(array:list, first:int, last:int, max:int):
     if first < last:
